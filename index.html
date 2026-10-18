@@ -50,6 +50,9 @@
   .filters button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;
     font-size:14px;cursor:pointer;color:var(--ink);font-family:inherit;}
   .filters button.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+  table.acts td.num{width:2.5em;text-align:center;color:var(--muted);}
+  table.acts td.cost{white-space:nowrap;color:var(--brand);font-weight:600;}
+  table.acts .en{font-size:12.5px;color:var(--muted);}
   .foot{color:var(--muted);font-size:13px;text-align:center;margin-top:26px;}
   @media print{nav.toc,.filters{display:none;}body{background:#fff;}section,header.top{box-shadow:none;}}
 </style>
@@ -59,8 +62,8 @@
 
 <header class="top">
   <div class="kick">ISLSL 領導力線上模擬遊戲・學員版</div>
-  <h1>One Future 專案：情境與角色介紹</h1>
-  <p>臺北市初任校長導入班講座・2026.10.22。請先讀懂情境與 24 位角色，再開始規劃你的推動策略。</p>
+  <h1>One Future 專案：情境、角色與活動介紹</h1>
+  <p>臺北市初任校長導入班講座・2026.10.22。請先讀懂情境、24 位角色與 18 項活動，再開始規劃你的推動策略。</p>
 </header>
 
 <nav class="toc">
@@ -68,6 +71,7 @@
   <a href="#s2">二、你的任務</a>
   <a href="#s3">三、和台灣的差別</a>
   <a href="#s4">四、24 位角色</a>
+  <a href="#s5">五、18 項活動</a>
 </nav>
 
 <section id="s1">
@@ -125,6 +129,32 @@
     <button data-f="secondary">中學（10）</button>
   </div>
   <div class="grid" id="cards"></div>
+</section>
+
+<section id="s5">
+  <h2>五、18 項活動</h2>
+  <p class="lead">專案團隊可以使用下列活動，依原講義順序排列。每項活動都有以 Bits 計算的成本，代表人力時間與金錢。有些活動針對特定個人，有些針對某個單位，有些則面向所有利害關係人。</p>
+  <div class="tablewrap"><table class="acts">
+    <tr><th>#</th><th>活動</th><th>說明</th><th>成本與人數</th></tr>
+    <tr><td class="num">1</td><td><b>蒐集非正式關係資訊</b><br><span class="en">Gather social information</span></td><td>了解共事對象之間的非正式關係。</td><td class="cost">1 Bit</td></tr>
+    <tr><td class="num">2</td><td><b>永續實踐評估</b><br><span class="en">Assess Sustainable Practices</span></td><td>由學校人員、支援部門、社區代表與供應商共同完成永續評估，找出影響經濟、環境與社會永續的現行做法。</td><td class="cost">3 Bits</td></tr>
+    <tr><td class="num">3</td><td><b>永續調查與發表</b><br><span class="en">Sustainability Survey and Presentation</span></td><td>向學校與教育局的利害關係人發表永續調查的結果。</td><td class="cost">2 Bits</td></tr>
+    <tr><td class="num">4</td><td><b>第一次對話</b><br><span class="en">Talk To First Time</span></td><td>與個別對象的第一次談話，介紹永續議題。</td><td class="cost">2 Bits，選 3 人</td></tr>
+    <tr><td class="num">5</td><td><b>第二次對話</b><br><span class="en">Talk To Second Time</span></td><td>後續談話，回應個別利害關係人的疑慮。需先完成第一次對話。</td><td class="cost">2 Bits，選 3 人</td></tr>
+    <tr><td class="num">6</td><td><b>第三次對話</b><br><span class="en">Talk To Third Time</span></td><td>第三次談話，進一步討論如何轉向更永續的做法。需先完成第二次對話。</td><td class="cost">2 Bits，選 3 人</td></tr>
+    <tr><td class="num">7</td><td><b>傳達願景</b><br><span class="en">Communicate Vision</span></td><td>透過一系列會議與社群媒體，凸顯 One Future 如何強化學區對兒童與社會的影響。</td><td class="cost">1 Bit</td></tr>
+    <tr><td class="num">8</td><td><b>建立共享願景</b><br><span class="en">Create Shared Vision</span></td><td>由利害關係人代表組成團隊，共同描繪永續學區的願景與達成策略。</td><td class="cost">6 Bits，選 8 人</td></tr>
+    <tr><td class="num">9</td><td><b>永續研習營</b><br><span class="en">Sustainability Retreat</span></td><td>週末活動，向內外部利害關係人提升對永續挑戰與關鍵做法的認識。</td><td class="cost">6 Bits</td></tr>
+    <tr><td class="num">10</td><td><b>永續訓練</b><br><span class="en">Sustainability Training</span></td><td>訓練如何運用永續做法，涵蓋能源節約、回收再利用、社會共融與學校決策。</td><td class="cost">5 Bits，選一個單位</td></tr>
+    <tr><td class="num">11</td><td><b>標竿學校參訪</b><br><span class="en">School Visit</span></td><td>利害關係人參訪曾獲永續獎項的其他學校系統。</td><td class="cost">5 Bits，選 8 人</td></tr>
+    <tr><td class="num">12</td><td><b>開始運用永續做法</b><br><span class="en">Use Sustainable Practices</span></td><td>選定的利害關係人開始在日常工作中運用永續做法。</td><td class="cost">2 Bits，選 3 人</td></tr>
+    <tr><td class="num">13</td><td><b>公開觀課示範</b><br><span class="en">Open Class Demonstration</span></td><td>學校人員觀摩資深教師的示範課，看見環境與社會永續議題如何融入現有課程。</td><td class="cost">5 Bits，選一所學校</td></tr>
+    <tr><td class="num">14</td><td><b>學校支持小組</b><br><span class="en">School Support Group</span></td><td>運用永續教學與做法的人組成綠色團隊（Green Team），每週聚會分享策略、解決問題並激勵他人。</td><td class="cost">4 Bits，選同一所學校 5 人</td></tr>
+    <tr><td class="num">15</td><td><b>分享永續成果</b><br><span class="en">Share Sustainability Success</span></td><td>選定學校的師生參加學區競賽，展示並分享把永續主題融入教學的成功經驗。</td><td class="cost">5 Bits，選一所學校</td></tr>
+    <tr><td class="num">16</td><td><b>永續報告</b><br><span class="en">Sustainability Report</span></td><td>運用各校與各部門蒐集的資料製作永續報告，提交教育委員會核可並對外傳播。</td><td class="cost">6 Bits，組成 5 人委員會</td></tr>
+    <tr><td class="num">17</td><td><b>政策修訂</b><br><span class="en">Policy Revision</span></td><td>尋求教育委員會核可，修訂特定學區政策以支持更永續的做法。</td><td class="cost">8 Bits，選 5 人</td></tr>
+    <tr><td class="num">18</td><td><b>學區慶典</b><br><span class="en">One Future Celebration</span></td><td>舉辦學區慶典，展示各校推動的環境、經濟與社會行動專案的成果，邀請全學區家長、教育工作者與社區成員參加。</td><td class="cost">8 Bits</td></tr>
+  </table></div>
 </section>
 
 <p class="foot">本頁依 LCSS 原始講義整理，「台灣大概是」為對照說明。國立臺灣師範大學 郭柏辰</p>
