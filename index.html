@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISLSL 角色與情境介紹</title>
+<style>
+  :root{
+    --bg:#fbf9fa; --panel:#ffffff; --ink:#222222; --muted:#666666;
+    --line:#e3dee1; --brand:#b3131b; --brand-soft:#f6e3e4; --tint:#ede9eb;
+    --u-district:#222222; --u-primary:#b3131b; --u-secondary:#7a7a7a;
+    --shadow:0 1px 3px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.04);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    line-height:1.75;font-size:16px;}
+  .wrap{max-width:980px;margin:0 auto;padding:32px 16px 80px;}
+  header.top{background:var(--ink);color:#fff;border-radius:16px;padding:28px 28px;box-shadow:var(--shadow);}
+  header.top .kick{font-size:13px;letter-spacing:.12em;text-transform:uppercase;opacity:.75;}
+  header.top h1{margin:.3em 0 .2em;font-size:26px;line-height:1.35;}
+  header.top p{margin:.2em 0 0;opacity:.9;font-size:15px;}
+  nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 6px;}
+  nav.toc a{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+    padding:7px 14px;font-size:14px;color:var(--ink);text-decoration:none;box-shadow:var(--shadow);}
+  nav.toc a:hover{border-color:var(--brand);color:var(--brand);}
+  section{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:24px 24px;margin-top:22px;box-shadow:var(--shadow);}
+  h2{font-size:21px;margin:.1em 0 .6em;color:var(--brand);}
+  h3{font-size:17px;margin:1.3em 0 .4em;}
+  p{margin:.5em 0;}
+  .lead{font-size:15.5px;color:var(--muted);}
+  .note{background:var(--brand-soft);border-radius:10px;padding:12px 16px;font-size:14.5px;margin:.8em 0;}
+  .tablewrap{overflow-x:auto;}
+  table{border-collapse:collapse;width:100%;margin:.8em 0;font-size:14.5px;min-width:560px;}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;}
+  th{background:var(--ink);color:#fff;font-weight:600;}
+  td.tw{color:var(--brand);font-weight:600;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:12px;}
+  .card{border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:#fff;display:flex;flex-direction:column;}
+  .card .who{font-weight:700;font-size:16px;}
+  .card .role{font-size:13px;color:var(--muted);margin-bottom:6px;}
+  .card .desc{font-size:14px;flex:1;}
+  .card .tw{background:var(--tint);border-radius:8px;padding:6px 10px;margin-top:10px;font-size:13.5px;}
+  .card .tw b{color:var(--ink);}
+  .card .tw span{display:block;font-size:11.5px;color:var(--muted);}
+  .unit{display:inline-block;border-radius:999px;font-size:12px;font-weight:600;padding:1px 10px;color:#fff;margin-left:6px;vertical-align:middle;}
+  .u-district{background:var(--u-district);} .u-primary{background:var(--u-primary);} .u-secondary{background:var(--u-secondary);}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px;}
+  .filters button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;
+    font-size:14px;cursor:pointer;color:var(--ink);font-family:inherit;}
+  .filters button.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .foot{color:var(--muted);font-size:13px;text-align:center;margin-top:26px;}
+  @media print{nav.toc,.filters{display:none;}body{background:#fff;}section,header.top{box-shadow:none;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="kick">ISLSL 領導力線上模擬遊戲・學員版</div>
+  <h1>One Future 專案：情境與角色介紹</h1>
+  <p>臺北市初任校長導入班講座・2026.10.22。請先讀懂情境與 24 位角色，再開始規劃你的推動策略。</p>
+</header>
+
+<nav class="toc">
+  <a href="#s1">一、情境</a>
+  <a href="#s2">二、你的任務</a>
+  <a href="#s3">三、和台灣的差別</a>
+  <a href="#s4">四、24 位角色</a>
+</nav>
+
+<section id="s1">
+  <h2>一、情境</h2>
+  <p class="lead">教育局局長 Al Anakodio 發出的使命宣言，說明 One Future 專案的背景與願景。</p>
+  <h3>背景</h3>
+  <p>本學區被選為推動教育永續的示範學區。COVID-19 疫情讓大家看見世界高度相互連結，健康、環境、經濟與社會問題都會跨越國界。局長認為教育在二十一世紀有了新的使命，要培養具備正確心態、知識與能力的未來公民，讓他們能在永續社會中過著充實的生活。</p>
+  <h3>願景</h3>
+  <p>One Future 呼應聯合國十七項永續發展目標（SDGs），要重新定義本學區教育系統對社會文化多元、健康與福祉、永續環境以及經濟成功的承諾。局長設定的目標是，在三年內讓本學區成為永續教育的標竿，讓其他學區以本學區的做法作為參考。</p>
+</section>
+
+<section id="s2">
+  <h2>二、你的任務</h2>
+  <p class="lead">你被指派加入 One Future 專案團隊，這是一個為期三年的任務。</p>
+  <h3>你要負責的事</h3>
+  <p>領導學校系統轉型，讓它成為具備永續價值與實踐的模範。這個轉變會展現在各利害關係人的實際做法上，也會反映在學校對社會的貢獻上。你負責在三個場域推動 One Future 的示範實施：教育局（District Office）、一所小學（Primary School）與一所中學（Secondary School）。</p>
+  <h3>資源與限制</h3>
+  <div class="tablewrap"><table>
+    <tr><th>項目</th><th>說明</th></tr>
+    <tr><td>時間</td><td>三年任務。局長提醒，時間是你最寶貴的資源。</td></tr>
+    <tr><td>預算</td><td>每一年都有一筆預算（第 1 年 35 Bits、第 2 年 30 Bits、第 3 年 25 Bits），用來支付各項活動的成本。Bits 同時代表人力時間與金錢。</td></tr>
+    <tr><td>策略原則</td><td>活動要用得聰明，思考要有策略，目的是告知、參與、賦權並支持利害關係人。</td></tr>
+  </table></div>
+</section>
+
+<section id="s3">
+  <h2>三、和台灣的差別</h2>
+  <p class="lead">這個遊戲的設定來自北美的學區制度，有些職位在台灣沒有，或名稱相同但功能不同。下表幫你換算成熟悉的位置。</p>
+  <h3>組織層級</h3>
+  <div class="tablewrap"><table>
+    <tr><th>遊戲裡的設定</th><th>在北美原本的意思</th><th>在台灣大概是</th></tr>
+    <tr><td>學區<br>School District</td><td>獨立的地方教育行政機關，有自己的預算、教育委員會和教育首長。</td><td class="tw">縣市政府教育局（處）。台灣說的「學區」只是入學分發範圍，不是機關。</td></tr>
+    <tr><td>學區辦公室<br>District Office</td><td>學區的行政總部，局長、副局長在這裡。</td><td class="tw">教育局本部</td></tr>
+    <tr><td>教育委員會<br>School Board</td><td>民選委員組成，核定學區預算與政策；局長要向它負責。</td><td class="tw">沒有直接對應。審預算的角色像議會教育委員會，審議政策的角色像縣市教育審議委員會（教育基本法第 10 條）。</td></tr>
+    <tr><td>中學<br>Secondary School</td><td>約 7（或 9）到 12 年級。</td><td class="tw">國中＋高中</td></tr>
+  </table></div>
+  <h3>學校層級</h3>
+  <div class="tablewrap"><table>
+    <tr><th>遊戲裡的設定</th><th>在北美原本的意思</th><th>在台灣大概是</th></tr>
+    <tr><td>副校長<br>Assistant Principal</td><td>中小學常設，協助校長處理行政、預算、學生事務。</td><td class="tw">國中小沒有副校長，功能接近處室主任（教務、學務、總務）。</td></tr>
+    <tr><td>科主任<br>Department Head</td><td>中學各學科的負責人，影響該科教師的教學方式。</td><td class="tw">國中領域召集人、高中學科召集人（教學研究會）</td></tr>
+    <tr><td>學習資源教師<br>Learning Resource Teacher</td><td>支援有學習需求的學生，也協助其他教師調整教學。</td><td class="tw">資源班（特教）教師</td></tr>
+    <tr><td>家長代表<br>Parent Representative</td><td>參與學校或學區的委員會。</td><td class="tw">家長會代表、校務會議家長代表</td></tr>
+  </table></div>
+  <div class="note">遊戲中需要「送教育委員會核可」的事情，在台灣可以想成：局內簽核、送教育審議委員會，或編列預算送議會審查。</div>
+</section>
+
+<section id="s4">
+  <h2>四、24 位角色</h2>
+  <p class="lead">24 位利害關係人分屬教育局、小學與中學三個單位。請留意他們的職位、經歷與過去的反應，這些都會影響他們對專案的興趣與投入。</p>
+  <div class="filters" id="filters">
+    <button data-f="all" class="active">全部（24）</button>
+    <button data-f="district">教育局（4）</button>
+    <button data-f="primary">小學（10）</button>
+    <button data-f="secondary">中學（10）</button>
+  </div>
+  <div class="grid" id="cards"></div>
+</section>
+
+<p class="foot">本頁依 LCSS 原始講義整理，「台灣大概是」為對照說明。國立臺灣師範大學 郭柏辰</p>
+
+</div>
+
+<script>
+const people = [
+  {id:"AL", role:"教育局局長 Director of Education", unit:"district", tw:"教育局長",
+   desc:"擔任局長兩年，過去未展現對永續的興趣，似乎因外部壓力才採用 One Future。這是他推動的第一個高調專案。"},
+  {id:"BETH", role:"副局長 Deputy Director", unit:"district", tw:"副局長",
+   desc:"因營運與行政專長從外部延攬進來，尚未與學區利害關係人建立深厚關係，對 One Future 的想法無人知曉。"},
+  {id:"CAROL", role:"教育委員會委員 School Board Member", unit:"district", tw:"近似議會教育委員會議員",
+   desc:"公開反對撥款給 One Future，偏好專注於提升學業卓越的方案。"},
+  {id:"DAVE", role:"教育委員會委員 School Board Member", unit:"district", tw:"近似教育審議委員會委員",
+   desc:"活躍的委員，常到學區學校訪視。局長提案時，他未表態支持或反對。"},
+
+  {id:"EVE", role:"小學校長 Principal", unit:"primary", tw:"國小校長",
+   desc:"以尊重對待師生並贏得忠誠，與家長及學區高層關係良好。支持新方案，但前提是她認為對學生有益。"},
+  {id:"FERN", role:"小學副校長 Assistant Principal", unit:"primary", tw:"處室主任（如總務、教務）",
+   desc:"專注於維持學校順利運作，主要關心平衡預算與有效營運。對新想法沒有興趣，但別無選擇時會配合。"},
+  {id:"GARY", role:"一年級教師 1st Grade Teacher", unit:"primary", tw:"一年級導師",
+   desc:"充滿活力的年輕教師，任教兩年，是環境教育的強力支持者，常尋求創新教法。他的熱情有時與資深教師產生衝突。"},
+  {id:"HAZEL", role:"二年級教師 2nd Grade Teacher", unit:"primary", tw:"二年級導師",
+   desc:"緊守核定課程，從未提出改進建議。新方案推出時總想知道別人的看法，並觀望是否會變成正式政策。"},
+  {id:"IRENE", role:"三年級教師 3rd Grade Teacher", unit:"primary", tw:"三年級導師",
+   desc:"認為要把工作做完，舊方法仍然最好用。會抗拒任何增加工作量的事，即使只是短期的。"},
+  {id:"JAN", role:"四年級教師 4th Grade Teacher", unit:"primary", tw:"四年級導師",
+   desc:"聰明且能言善道。原本反對在 4 到 6 年級課程導入專題式學習，但在看見對學生投入與學習成果的影響後轉為強力支持者。"},
+  {id:"KEN", role:"五年級教師 5th Grade Teacher", unit:"primary", tw:"五年級導師",
+   desc:"任教五年，這段期間有多位家長抱怨他不夠盡力。在同事間知名度不高。"},
+  {id:"LORA", role:"六年級教師 6th Grade Teacher", unit:"primary", tw:"六年級導師",
+   desc:"是位好老師，但與同事互動不多。曾反對在課程中使用專題式學習，兩年後才開始在課堂運用部分活動。"},
+  {id:"MIA", role:"學習資源教師 Learning Resource Teacher", unit:"primary", tw:"資源班教師",
+   desc:"幾年前曾試圖向其他教師引進多項學習創新，但只有偶爾成功。最近加入社區回收計畫擔任志工。"},
+  {id:"NORA", role:"家長代表 Parent Representative", unit:"primary", tw:"家長會代表",
+   desc:"單親媽媽，兩個孩子就讀小學。擔任家長代表近一年，在委員會會議中是安靜但專注的傾聽者。"},
+
+  {id:"OWEN", role:"中學校長 Principal", unit:"secondary", tw:"國中／高中校長",
+   desc:"聰明有企圖心，升任中學校長前曾在教育局服務（這個職位常被視為升遷跳板）。學校經營良好，但傾向謹慎，小心不得罪任何人。"},
+  {id:"PAT", role:"中學副校長 Assistant Principal", unit:"secondary", tw:"處室主任（如學務）",
+   desc:"覺得工作負荷過重，大部分時間都在處理日常問題。對浪費時間、妨礙他讓學校順利運作的新專案沒有興趣。"},
+  {id:"Q.T.", role:"數學科主任 Math Department Head", unit:"secondary", tw:"數學領域召集人",
+   desc:"以學校在數學考試與競賽的優異表現為傲。對任何會干擾學生學業表現的事都沒有興趣。"},
+  {id:"RAY", role:"語文科主任 Language Studies Department Head", unit:"secondary", tw:"語文領域召集人",
+   desc:"以學校在數學考試與競賽的優異表現為傲。對任何會干擾學生學業表現的事都沒有興趣。（原講義此處描述與 Q.T. 相同）"},
+  {id:"SALLY", role:"文學教師 Literature Teacher", unit:"secondary", tw:"國文教師",
+   desc:"畢業於這所中學，如今有一對雙胞胎女兒在此就讀。對可能影響學校排名的新方案抱持疑慮，會先看其他老師的態度再決定。"},
+  {id:"THELMA", role:"自然科主任 Science Department Head", unit:"secondary", tw:"自然領域召集人",
+   desc:"確保教師緊密遵循核定的自然課程。雖然通常對採用新方案較為謹慎，過去幾年卻成功把學習科技融入所屬科系。"},
+  {id:"UPTON", role:"社會科教師 Social Studies Teacher", unit:"secondary", tw:"社會領域教師",
+   desc:"最近獲頒優良教師獎，常被同事諮詢。但自從去年他發起的課程倡議未獲支持後，就變得沉默。"},
+  {id:"VELMA", role:"數學教師 Math Teacher", unit:"secondary", tw:"數學教師",
+   desc:"安靜而稱職，認為學校應更積極拓展學生的國際視野。目前夜間攻讀碩士，在校時間比過去少。"},
+  {id:"WILL", role:"語文教師 Language Teacher", unit:"secondary", tw:"語文教師（如英語）",
+   desc:"在另一所學校出現「問題」後被調到這所中學。常在科務會議遲到，經常抱怨這所學校教師的額外工作負擔。"},
+  {id:"XAVIER", role:"家長代表 Parent Representative", unit:"secondary", tw:"家長會代表",
+   desc:"在社區有許多人脈，總是為學校的最佳利益著想。但過去一年因工作責任，較少參與學校活動。"}
+];
+const unitName = {district:"教育局", primary:"小學", secondary:"中學"};
+
+function render(filter){
+  const box = document.getElementById("cards");
+  box.innerHTML = "";
+  people.filter(p => filter === "all" || p.unit === filter).forEach(p => {
+    const el = document.createElement("div");
+    el.className = "card";
+    el.innerHTML =
+      '<div class="who">' + p.id + '<span class="unit u-' + p.unit + '">' + unitName[p.unit] + '</span></div>' +
+      '<div class="role">' + p.role + '</div>' +
+      '<div class="desc">' + p.desc + '</div>' +
+      '<div class="tw"><span>台灣大概是</span><b>' + p.tw + '</b></div>';
+    box.appendChild(el);
+  });
+}
+document.querySelectorAll("#filters button").forEach(b => {
+  b.addEventListener("click", () => {
+    document.querySelectorAll("#filters button").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    render(b.dataset.f);
+  });
+});
+render("all");
+</script>
+</body>
+</html>
